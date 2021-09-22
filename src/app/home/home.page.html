@@ -1,0 +1,24 @@
+<ion-header class="background">
+  <ion-toolbar>
+    <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="background" fullscreen>
+    <ion-label>
+      <h1 class="h1">Bienvenido/a:</h1>
+      <h1 class="h3">{{usuario}}</h1>
+    </ion-label>
+    <ion-card-content>
+    <ion-img src="../assets/img/preview.jpg" style="width : 200px ; height : 200px" class="qrprev"></ion-img>
+
+
+          <ion-img src="../assets/img/qrbtn.png" style="width : 55px ; height : 55px" click="escanear()" class="qrbtn"></ion-img> 
+    </ion-card-content>
+    <div></div>
+    <center>
+      <button mat-icon-button color="warn"><mat-icon>❤</mat-icon></button> 
+    </center> 
+    <div></div>
+    <ion-button shape="block" width="full" (click)="iniciar()" color="primary" routerLink="/login">Cerrar Sesión</ion-button>      
+  </ion-content>

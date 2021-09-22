@@ -1,0 +1,26 @@
+<ion-header class="background">
+  <ion-toolbar>
+    <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" fullscreen>
+  <ion-card-title class= "ion-padding-top" padding-bottom="25px">
+    <ion-label>
+      <h1 class="h1">Ingreso de Usuario</h1>
+    </ion-label>
+  </ion-card-title>
+<ion-card-content> 
+<ion-item>
+      <ion-label position="left">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+</ion-item>
+<ion-item> 
+      <ion-label position="left">Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+</ion-item>
+</ion-card-content>
+  <ion-button shape="block" width="full" (click)="iniciar()" color="primary">INGRESAR</ion-button>
+<div></div>
+  <h6 class= "h5">¿Olvidaste tu contraseña? <ion-router-link href="/recovery">Recupérala</ion-router-link></h6>
+</ion-content>
