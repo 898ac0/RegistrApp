@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
+import { ApiclientService } from '../servicios/apiclient.service';
 
 
 @Component({
@@ -9,8 +10,26 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  usuario: string;
-  constructor(public toastController: ToastController, private router: Router) { }
+  usuario: any;
+  clave: any;
+  constructor(public toastController: ToastController, private router: Router, private api: ApiclientService) { }
+  ionViewWillEnter(){
+    this.getUsuarios();
+    this.getClaves();
+  }
+
+  getUsuarios() {
+    this.api.getUsuarios().subscribe((data)=>{
+      this.usuario=data;
+    });
+  }
+
+  getClaves() {
+    this.api.getClaves().subscribe((data)=>{
+      this.clave=data;
+    })
+  }
+  
   iniciar(){
 
     this.presentToast ("Has ingresado sesión correctamente");
