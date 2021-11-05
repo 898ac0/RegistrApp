@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApiclientService } from './apiclient.service';
+import { QrscannerService } from './qrscanner.service';
 
-describe('ApiclientService', () => {
-  let service: ApiclientService;
+describe('QrscannerService', () => {
+  let service: QrscannerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ApiclientService);
+    service = TestBed.inject(QrscannerService);
   });
 
   it('should be created', () => {

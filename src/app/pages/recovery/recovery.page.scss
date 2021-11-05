@@ -1,5 +1,5 @@
 ion-content.background{
-    --background: url(../../assets/img/bg.png) 0 0/100% 100% no-repeat #19192e;
+    --background: url(../../../assets/img/bg.png) 0 0/100% 100% no-repeat #19192e;
     
 }
 
@@ -21,7 +21,7 @@ ion-item {
 
 .h1 {
   font-family: Tangiang;
-  font-size:1.0em;
+  font-size:1.1em;
   text-align: center;
   color: #ffffff;
 }
@@ -33,13 +33,6 @@ ion-item {
   color: #ffffff;
 }
 
-.h5 {
-  font-family: Tangiang;
-  font-size:1.1em;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 15px;
-}
 
 ion-toolbar {
   --background: transparent;

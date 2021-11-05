@@ -1,0 +1,20 @@
+<ion-header class="background">
+  <ion-toolbar>
+    <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="background" fullscreen>
+    <ion-label>
+      <h1 class="h1">Bienvenido/a:</h1>
+      <h1 class="h3">{{user}}</h1>
+    </ion-label>
+<hr>
+          <ion-img src="../assets/img/qrbtn.png" style="width : 80px ; height : 80px" routerLink="/qrscanner" class="qrbtn"></ion-img>
+<hr>
+    <ion-button shape="block" width="full" (click)="submit()" color="primary" routerLink="/apirest">APIREST</ion-button>
+
+    <hr>
+    <ion-button shape="block" width="full" (click)="close()" color="primary" routerLink="/login">CERRAR SESIÓN</ion-button>
+
+  </ion-content>

@@ -1,19 +1,20 @@
-<ion-header class="background">
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
+    <ion-title>
+      Blank
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-  <ion-content class="background" fullscreen>
-    <ion-label>
-      <h1 class="h1">Bienvenido/a:</h1>
-      <h1 class="h3">{{usuario}}</h1>
-    </ion-label>
-    <ion-card-content>
-    <ion-img src="../assets/img/preview.jpg" style="width : 200px ; height : 200px" class="qrprev"></ion-img>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-
-          <ion-img src="../assets/img/qrbtn.png" style="width : 55px ; height : 55px" click="escanear()" class="qrbtn"></ion-img> 
-    </ion-card-content>
-    <ion-button shape="block" width="full" (click)="iniciar()" color="primary" routerLink="/login">Cerrar Sesión</ion-button>      
-  </ion-content>
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>

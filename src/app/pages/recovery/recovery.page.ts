@@ -11,10 +11,10 @@ export class RecoveryPage implements OnInit {
   constructor(public toastController: ToastController) { }
 
   restablecer(){
-  this.presentToast ("Se ha enviado la contraseña de recuperación a tu correo electrónico.");
+  this.presentToast ('Se ha enviado la contraseña de recuperación al correo');
 }
 
-async presentToast(msg:string) {
+async presentToast(msg: string) {
   const toast = await this.toastController.create({
     message: msg,
     duration:4000

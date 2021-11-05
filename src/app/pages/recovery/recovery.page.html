@@ -1,8 +1,5 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home" routerLink="/login"></ion-back-button>
-    </ion-buttons>
     <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
   </ion-toolbar>
 </ion-header>
@@ -20,5 +17,9 @@
 </ion-item>
 </ion-card-content>
   <ion-button shape="block" width="full" (click)="restablecer()" color="primary">RECUPERAR</ion-button>
+
+  <hr>
+  <ion-button shape="block" width="full" (click)="close()" color="primary" routerLink="/login">REGRESAR</ion-button>
+
 </ion-content>
 

@@ -1,13 +1,12 @@
-ion-content.background{
-    --background: url(../../assets/img/bg.png) 0 0/100% 100% no-repeat #19192e;
-    
+ion-content.background {
+  --background: url(../../../assets/img/bg.png) 0 0/100% 100% no-repeat #19192e;
+
 }
 
 ion-header {
   ion-img {
     padding-top: 10px;
     height: 35px;
-    padding-right: 50px;
   }
 }
 
@@ -22,21 +21,27 @@ ion-item {
 
 .h1 {
   font-family: Tangiang;
-  font-size:1.1em;
+  font-size: 1.2em;
   text-align: center;
   color: #ffffff;
 }
 
 .h6 {
   font-family: Tangiang;
-  font-size:1.1em;
+  font-size: 1.1em;
   text-align: center;
   color: #ffffff;
 }
 
+.h5 {
+  font-family: Tangiang;
+  font-size: 1.1em;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+}
 
 ion-toolbar {
   --background: transparent;
   --ion-color-base: transparent !important;
 }
-

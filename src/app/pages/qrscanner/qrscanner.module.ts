@@ -3,17 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-import { LoginPageRoutingModule } from './login-routing.module';
-import { LoginPage } from './login.page';
+
+import { QrscannerPageRoutingModule } from './qrscanner-routing.module';
+
+import { QrscannerPage } from './qrscanner.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule,
-
+    QrscannerPageRoutingModule
   ],
-  declarations: [LoginPage],
+  declarations: [QrscannerPage]
 })
-export class LoginPageModule {}
+export class QrscannerPageModule {}

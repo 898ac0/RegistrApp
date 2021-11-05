@@ -1,25 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
-  usuario: any;
-  constructor(private activeRoute: ActivatedRoute, private router: Router) {
+export class HomePage {
 
-    this.activeRoute.queryParams.subscribe(params=>{
-      if(this.router.getCurrentNavigation().extras.state){
-        this.usuario=this.router.getCurrentNavigation().extras.state.usuario;
-        console.log(this.usuario);
-      }
+  constructor() {}
 
-    });
-
-  }
-  ngOnInit() {
-
-  }
 }
