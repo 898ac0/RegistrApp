@@ -1,3 +1,4 @@
+<router-outlet></router-outlet>
 <ion-header class="background">
   <ion-toolbar>
     <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
@@ -10,7 +11,8 @@
       <h1 class="h3">{{user}}</h1>
     </ion-label>
 <hr>
-          <ion-img src="../assets/img/qrbtn.png" style="width : 80px ; height : 80px" routerLink="/qrscanner" class="qrbtn"></ion-img>
+          <ion-img src="../assets/img/qrbtn.png" style="width : 80px ; height : 80px" [routerLink]="['/qrscanner']" class="qrbtn"></ion-img>
+          
 <hr>
     <ion-button shape="block" width="full" (click)="submit()" color="primary" routerLink="/apirest">APIREST</ion-button>
 
