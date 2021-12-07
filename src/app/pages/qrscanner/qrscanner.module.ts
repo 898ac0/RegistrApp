@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { QrscannerPageRoutingModule } from './qrscanner-routing.module';
-
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { QrscannerPage } from './qrscanner.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { QrscannerPage } from './qrscanner.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    QrscannerPageRoutingModule
+    BarcodeScanner,
+    QrscannerPageRoutingModule,
   ],
   declarations: [QrscannerPage]
 })
